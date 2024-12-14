@@ -4,11 +4,11 @@ on:
     branches:
       - main
 jobs:
-  check-aplication:
+  check-application:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        go: [ '1.14', '1.23' ]
+        go: ["1.14", "1.23"]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-go@v2
